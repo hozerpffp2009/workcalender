@@ -4,14 +4,7 @@ body {
   line-height: 1;
 }
 
- textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
+ 
 
 .jumbotron {
   text-align: center;
@@ -19,6 +12,14 @@ body {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+#displayDate {
+  padding: 50px;
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: oblique;
 }
 
 .description{
@@ -34,6 +35,12 @@ table {
   color: black;
 }
 
+footer {
+  border: solid black;
+  padding: 10px;
+  text-align: center;
+  color: blue;
+}
 /* .time-block{
   text-align: center;
   border-radius: 15px;

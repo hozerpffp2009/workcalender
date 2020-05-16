@@ -19,9 +19,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css">
-    <script src='./script.js'></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+
+    
+
 
     <title>Work Day Scheduler</title>
 
@@ -30,41 +32,44 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-           
-   
-
-      <p class="lead"></p>
   
+      <p class="lead"></p>
+  <script>
+
+
   </script> 
-      <p id="currentDay" class="lead"></p>
+      <div id = "displayDate"></div>
     </header>
     <div class="container">
+
       <table style="width: 100%;">
+        <th style="font-size: 20px;">Work week 1</th>
+        
         <tr id="row0">
           <td>9AM</td>
           <td>
             <input type="text" class="form-control" style="background-color: lightgreen;" id="form" placeholder="Available"/>
           </td>
           <td>
-            <button id="saveBtn" style="background-color: lightblue;">save</button>
+            <button class="saveBtn" style="background-color: lightblue;">save</button>
           </td>
         </tr>
         <tr id="row1">
           <td>10AM</td>
           <td>
-            <input type="text" class="form-control" style="background-color: lightgreen;" placeholder="Available"/>
+            <input type="text" class="form-control" style="background-color: lightgreen;" id="form2" placeholder="Available"/>
           </td>
           <td>
-            <button id="saveBtn"  style="background-color: lightblue;">save</button>
+            <button class="saveBtn2"  style="background-color: lightblue;">save</button>
           </td>
         </tr>
         <tr id="row2">
           <td>11AM</td>
           <td>
-            <input type="text" class="form-control" style="background-color: lightgreen;" placeholder="Available"/>
+            <input type="text" class="form-control" style="background-color: lightgreen;" id="form3" placeholder="Available"/>
           </td>
           <td>
-            <button id="saveBtn"  style="background-color: lightblue;">save</button>
+            <button class="saveBtn3"  style="background-color: lightblue;">save</button>
           </td>
         </tr>
         <tr id="row3">
@@ -73,43 +78,43 @@
             <input type="text" class="form-control" style="background-color: red;" placeholder="Lunch break (Unavailabe)"/>
           </td>
           <td>
-            <button id="saveBtn"  style="background-color: lightblue;">save</button>
+            <button class="saveBtn"  style="background-color: lightblue;">save</button>
           </td>
         </tr>
         <tr id="row4">
           <td>1PM</td>
           <td>
-            <input type="text" class="form-control" style="background-color: lightgreen;" placeholder="Available"/>
+            <input type="text" class="form-control" style="background-color: lightgreen;" id="form4" placeholder="Available"/>
           </td>
           <td>
-            <button id="saveBtn"  style="background-color: lightblue;">save</button>
+            <button class="saveBtn4"  style="background-color: lightblue;">save</button>
           </td>
         </tr>
         <tr id="row5">
           <td>2PM</td>
           <td>
-            <input type="text" class="form-control" style="background-color: lightgreen;" placeholder="Available"/>
+            <input type="text" class="form-control" style="background-color: lightgreen;" id="form5" placeholder="Available"/>
           </td>
           <td>
-            <button id="saveBtn"  style="background-color: lightblue;">save</button>
+            <button class="saveBtn5"  style="background-color: lightblue;">save</button>
           </td>
         </tr>
         <tr id="row6">
           <td>3PM</td>
           <td>
-            <input type="text" class="form-control" style="background-color: lightgreen;" placeholder="Available"/>
+            <input type="text" class="form-control" style="background-color: lightgreen;" id="form6" placeholder="Available"/>
           </td>
           <td>
-            <button id="saveBtn"  style="background-color: lightblue;">save</button>
+            <button class="saveBtn6"  style="background-color: lightblue;">save</button>
           </td>
         </tr>
         <tr id="row7">
           <td>4PM</td>
           <td>
-            <input type="text" class="form-control" style="background-color: lightgreen;" placeholder="Available"/>
+            <input type="text" class="form-control" style="background-color: lightgreen;" id="form7" placeholder="Available"/>
           </td>
           <td>
-            <button id="saveBtn"  style="background-color: lightblue;">save</button>
+            <button class="saveBtn7"  style="background-color: lightblue;">save</button>
           </td>
         </tr>
       <tr id="row8">
@@ -117,14 +122,16 @@
         <td>
           <input type="text" class="form-control" style="background-color: red;" placeholder="unavailable for scheduling"/>
           <td>
-            <button id="saveBtn"  style="background-color: lightblue;">save</button>
+            <button class="saveBtn"  style="background-color: lightblue;">save</button>
           </td>
         </td>
       </tr>
       </table>
+   <br>
+      <footer>Designed by joseph</footer>
     </div>
      
     </div>
-   
+    <script src='./script.js'></script>
   </body>
 </html>
