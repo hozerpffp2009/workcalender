@@ -1,3 +1,4 @@
+//create variables for text and save button
 var formInput = document.querySelector("#form");
 var formInput2 = document.querySelector("#form2");
 var formInput3 = document.querySelector("#form3");
@@ -8,10 +9,11 @@ var formInput7 = document.querySelector("#form7");
 var saveButton = document.querySelector(".saveBtn");
 var saveButton2 = document.querySelector(".saveBtn2");
 var saveButton3 = document.querySelector(".saveBtn3");
-var saveButton4 = document.querySelector(".saveBtn4");
+var saveButton4 = document.querySelector(".saveBtn4"); 
 var saveButton5 = document.querySelector(".saveBtn5");
 var saveButton6 = document.querySelector(".saveBtn6");
 var saveButton7 = document.querySelector(".saveBtn7");
+// call functions to be ran
 recordForm();
 recordForm2();
 recordForm3()
@@ -20,7 +22,7 @@ recordForm5();
 recordForm6();
 recordForm7();
 
-
+//  current date
 var NowDate = new Date();
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var sDay = NowDate.getDate();
@@ -40,7 +42,7 @@ saveButton.addEventListener("click", function(event) {
 
     var formCall = document.querySelector("#form").value;
 
-    if (formInput === "") {
+    if (formInput === "") { 
         displayMessage("Thank you for your input");
     } else {
         localStorage.setItem("form", formCall);
